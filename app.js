@@ -5,7 +5,8 @@ new Vue({
     data: {
         name: 'Maria',
         job: 'Developer',
-        site: 'https://github.com/kraftaa'
+        site: 'https://github.com/kraftaa',
+        siteTag:'<a href="https://github.com/kraftaa">Site Tag</a>'
     },
     methods: {
         greet: function(time){
