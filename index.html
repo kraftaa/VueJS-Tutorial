@@ -8,12 +8,10 @@
     </head>
     <body>
         <div id="vue-app">
-            <!-- <h1>{{ greet('afternoon') }}</h1> -->
-            <h1>Data Binding</h1>
-            <a v-bind:href="site">Developer</p>
-            <!-- <p>Job: {{ job }}</p> -->
-            <input type="text" v-bind:value="job"/>
-            <p v-html="siteTag"></p>
+            <h1>Events</h1>
+            <button v-on:click="age++">Add a Year</button>
+            <button v-on:click="age--">Subtract a Year</button>
+            <p> My age is {{ age }}</p>
         </div>
 
         <script src="app.js"></script>
