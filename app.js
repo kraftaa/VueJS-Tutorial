@@ -3,17 +3,29 @@ new Vue({
     // root instance to control
     el:'#vue-app',
     data: {
-        name: '',
-        age: ''
+        age: 20,
+        a:0,
+        b:0
     },
     methods: {
-        logName: function(){
-            // two way data binding
-            console.log('entered name');
+        // addToA: function(){
+        //     console.log('addtoA');
+        //     return this.a + this.age;
+        // },
+        // addToB: function(){
+        //      console.log('addtoB');
+        //     return this.b + this.age;
+        // }
+    },
+    computed: {
+        addToA: function(){
+            console.log('addtoA');
+            return this.a + this.age;
         },
-        logAge: function(){
-            console.log('entered age');
-    }
+        addToB: function(){
+             console.log('addtoB');
+            return this.b + this.age;
+        }
     }
 
 });
