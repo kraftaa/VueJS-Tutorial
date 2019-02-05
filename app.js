@@ -3,12 +3,12 @@ new Vue({
     // root instance to control
     el:'#vue-app',
     data: {
-        age: 18,
-        x: 0,
-        y: 0
+        name: '',
+        age: ''
     },
     methods: {
         logName: function(){
+            // two way data binding
             console.log('entered name');
         },
         logAge: function(){
