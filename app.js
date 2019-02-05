@@ -3,8 +3,8 @@ new Vue({
   // root instance to control
   el:'#vue-app',
   data: {
-    available:false,
-    nearby:false
+    error: false,
+    success: false
 
   },
   methods: {
