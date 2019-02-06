@@ -8,24 +8,17 @@
   </head>
   <body>
   <div id="vue-app">
-      <h1>Looping through lists</h1>
-      <!-- {{ characters[0] }} -->
-      <ul>
-        <li v-for="character in characters">{{ character }}</li>
-      </ul>
-      <ul>
-        <li v-for="(ninja,index) in ninjas">{{index}}.{{ ninja.name }} - {{ ninja.age }}</li>
-      </ul>
-      <template v-for="(ninja,index) in ninjas">
-        <h3>{{index}}.{{ ninja.name }}</h3>
-        <p>{{ ninja.age }}</p>
-      </template>
-      <template v-for="ninja in ninjas">
-        <div v-for="(val,key) in ninja">
-          <p>{{ key }} - {{ val }}</p>
-        </div>
-      </template>
+      <h1>Multiple Vue Instances</h1>
+      <div id ="vue-app-one">
+        <h2>{{ title }}</h2>
+        <p>{{ greet }}</p>
+      </div>
 
+      <div id="vue-app-two">
+        <h2>{{ title }}</h2>
+        <p>{{ greet }}</p>
+        <button v-on:click="changeTitle">Change app one title</button>
+      </div>
   </div>
 
     <script src="app.js"></script>
