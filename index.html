@@ -8,17 +8,13 @@
   </head>
   <body>
   <div id="vue-app">
-      <h1>Multiple Vue Instances</h1>
-      <div id ="vue-app-one">
-        <h2>Vue app one</h2>
-        <greeting></greeting>
-      </div>
+      <h1>Refs</h1>
+      <input type="text" ref="input"/>
+      <button v-on:click="readRefs">Submit</button>
+      <p>Your food: {{ output }}</p>
 
-      <div id="vue-app-two">
-        <h2>Vue app two</h2>
-        <greeting></greeting>
+      <div ref="test">hello</div>
 
-      </div>
   </div>
 
     <script src="app.js"></script>

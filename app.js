@@ -1,50 +1,18 @@
-Vue.component('greeting', {
-  template:'<p>Hey there, I am {{ name }}. <button v-on:click="changeName">Change name</button></p>',
-  data: function(){
-    return{
-      name:"Yoshi"
-    }
-  },
-  methods: {
-    changeName:function(){
-      this.name='Mario';
-    }
-  }
-
-});
-
-
 new Vue({
   // properties
   // root instance to control
-  el:'#vue-app-one',
+  el:'#vue-app',
   data: {
-
+    output: "fav food"
   },
   methods: {
-
+    readRefs: function(){
+      console.log(this.$refs.test.innerText);
+      this.output = this.$refs.input.value;
+    }
   },
   computed: {
 
   }
 
 });
-
-new Vue({
-  // properties
-  // root instance to control
-  el:'#vue-app-two',
-  data: {
-
-  },
-  methods: {
-
-  },
-  computed: {
-    }
-
-
-});
-
-
-two.title = "Changed from outside";
